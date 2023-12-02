@@ -60,4 +60,9 @@ public class APIS {
     }
 
     //request using path_params
+    @GetMapping("/getInfoByPathParam/{userId}") //eg; linkedin and leetcode url are exmaple of request using path param
+    public User getUserInfoViaPath(@PathVariable("userId") Integer userId){
+        User user = userDb.get((userId));
+        return user;
+    }
 }
