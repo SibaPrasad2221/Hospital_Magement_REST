@@ -1,11 +1,12 @@
 package com.example.Hospital_Management;
 
+import com.example.Hospital_Management.Models.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
 @RestController
-public class APIS {
+public class IntroToApis {
 
     //for this dummy project we will use hashamp as our temporary data
     HashMap<Integer, User> userDb = new HashMap<>();

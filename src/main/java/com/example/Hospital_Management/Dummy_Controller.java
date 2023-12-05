@@ -2,10 +2,8 @@ package com.example.Hospital_Management;
 
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Key;
-
 @RestController //this annotation means all the apis are being written here
-public class HelloController {
+public class Dummy_Controller {
     @RequestMapping("/hello")
     public String hello() {
         return "Hello, Siba, you are in a right path.!:)";
